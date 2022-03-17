@@ -11,15 +11,33 @@
     <form>
       <div>
         <label>Subject</label>
-        <input type="text" />
+        <input id="subject"  type="text" />
       </div>
       <div>
         <label>Description</label>
-        <input type="text" />
+        <input id="description" type="text" />
+      </div>
+      <label>Date</label>
+        <input id="date" type="date" />
       </div>
       <div>
-        <button>Submit</button>
+        <button onclick="mySubmit(event)">Submit</button>
       </div>
     </form>
+
+    <table>
+<thead>
+<tr>
+    <th>Subjet</th>
+    <th>description</th>
+    <th>Date</th>
+</tr>
+
+</thead>
+
+
+    </table>
+    
+    <script src="./index.js"></script>
   </body>
 </html>
