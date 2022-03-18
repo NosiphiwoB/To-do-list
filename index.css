@@ -1,0 +1,32 @@
+body{ 
+background-image: url('./assets/lists-g266320cf6_1920.jpg');
+}
+
+
+#form {
+margin:auto;
+width: 15%;
+border-left: 2px solid black;
+border-bottom: 2px solid balck;
+padding: 2px;
+}
+
+#header {
+    color: red;
+    text-align: center;
+}
+
+
+#table {
+    width: 60%;
+    margin: auto;
+ 
+}
+
+    thead{
+       background-color:red; 
+    }
+
+    #msg {
+        text-align: center;
+    }
