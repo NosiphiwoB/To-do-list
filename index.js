@@ -25,16 +25,13 @@ localStorage.setItem('user', JSON.stringify(formData));
  var output = JSON.parse(localStorage.getItem("user"));
  output.forEach(function(element){
    document.getElementById("tbody").innerHTML +=`
-   <td>${element.subject}</td>
-   <td>${element.description}</td>
-   <td>${element.date}</td>
+   <td>${subject.value}</td>
+   <td>${description.value}</td>
+   <td>${date.value}</td>
    <td><button onclick="myEdit()">Edit</button>
    <button onclick="myDelete()">Delete X</button></td>
-
-   
    ` ;
    
- })
+ }
 
 
-}
