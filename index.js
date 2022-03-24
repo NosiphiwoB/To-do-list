@@ -1,4 +1,4 @@
-let formData = []
+
 
 const mySubmit = (event) => {
   event.preventDefault();
@@ -10,7 +10,8 @@ const mySubmit = (event) => {
     document.getElementById(
       "msg"
     ).innerHTML = `<p style="color:green;">Succesfuly submitted</p>`;
-    myDisplay()
+    myDisplay();
+    reset();
   } else {
     document.getElementById(
       "msg"
@@ -18,18 +19,26 @@ const mySubmit = (event) => {
   }
 };
 
+const myDelete = (event) => {
+  let element = document.getElementById("tbl");
+  element.parentNode.removeChild(element);
+};
+
+const reset =() => {
+  document.getElementById("form").reset();
+}
+
+
 const myDisplay = () => {
-let formDataValue = {subject:subject.value, description:description.value, date:date.value} 
-formData.push(formDataValue)
-localStorage.setItem('user', JSON.stringify(formData));
- var output = JSON.parse(localStorage.getItem("user"));
- output.forEach(function(element){
    document.getElementById("tbody").innerHTML +=`
-   <td>${subject.value}</td>
+  <tr id="tbl"> 
+  <td>${subject.value}</td>
    <td>${description.value}</td>
    <td>${date.value}</td>
    <td><button onclick="myEdit()">Edit</button>
-   <button onclick="myDelete()">Delete X</button></td>
+   <button onclick="myDelete(event)">Delete</button>
+   </td>
+   </tr>
    ` ;
    
  }
