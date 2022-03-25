@@ -18,9 +18,8 @@ padding: 2px;
 
 
 #table {
-    width: 60%;
+    width: 70%;
     margin: auto;
- 
 }
 
     thead{
@@ -30,3 +29,38 @@ padding: 2px;
     #msg {
         text-align: center;
     }
+
+    #tbody {
+        text-align: center;
+    }
+
+    #editform {
+        display: none;
+        position:absolute; 
+        z-index:99;     
+        top: 20%;
+    left: 30%; 
+    background: rgb(255, 255, 255);
+    height: 300px; 
+    width: 400px;
+}
+
+
+#delete {
+background-image:url(./assets/delete_black_24dp.svg) ;
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+width: 22px;
+height: 22px;
+}
+
+#edit {
+    background-image: url(./assets/edit_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+   
+}

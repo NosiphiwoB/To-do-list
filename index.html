@@ -5,57 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TO-DO-LIST</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
   </head>
-
-
+  
   <body>
+   
+    <div id="editform">
+    </div>
+
+
     <h1 id="header">To Do List</h1>
     <form id="form">
       <div>
         <label>Subject</label>
-        <input id="subject"  type="text" />
+        <input id="subject" type="text" />
       </div>
+      
       <div>
         <label>Description</label>
         <input id="description" type="text" />
       </div>
+
       <div>
-      <label>Date</label>
+        <label>Date</label>
+        <br>
         <input id="date" type="date" />
       </div>
-      <br>
-      <br>
+      
+      <br />
+      <br />
 
       <div>
         <button onclick="mySubmit(event)">Submit</button>
       </div>
     </form>
     <div id="msg"></div>
-<br>
-<br>
+    <br />
+    <br />
 
-<div>
-    <table id="table">
-<thead>
-<tr>
-    <th>Subjet</th>
-    <th>description</th>
-    <th>Date</th>
-    <th>Action</th>
-</tr>
-</thead>
+    <div>
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Subjet</th>
+            <th>description</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
 
-
-<tbody>
-  <tr id="tbody"></tr>
-
-</tbody>
-
-    </table>
-  </div>
-
-
+        <tbody id="tbody">
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
