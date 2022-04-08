@@ -1,5 +1,5 @@
 body{ 
-background-image: url('./assets/to-do-ge9b08146e_1920.jpg');
+background-image: url('./assets/to-do-ge9b08146e_1920.jpg')
 }
 
 
@@ -8,30 +8,30 @@ margin:auto;
 width: 15%;
 border-left: 2px solid black;
 border-bottom: 2px solid balck;
-padding: 2px;
+padding: 2px
 }
 
 #header {
     color: red;
-    text-align: center;
+    text-align: center
 }
 
 
 #table {
     width: 70%;
-    margin: auto;
+    margin: auto
 }
 
     thead{
-       background-color:red; 
+       background-color:red
     }
 
     #msg {
-        text-align: center;
+        text-align: center
     }
 
     #tbody {
-        text-align: center;
+        text-align: center
     }
 
     #editform {
@@ -42,7 +42,7 @@ padding: 2px;
     left: 30%; 
     background: rgb(255, 255, 255);
     height: 300px; 
-    width: 400px;
+    width: 400px
 }
 
 
@@ -52,7 +52,7 @@ background-repeat: no-repeat;
 background-position-x: center;
 background-size: cover;
 width: 22px;
-height: 22px;
+height: 22px
 }
 
 #edit {
@@ -61,6 +61,6 @@ height: 22px;
     background-position-x: center;
     background-size: cover;
     width: 22px;
-    height: 22px;
+    height: 22px
    
 }
